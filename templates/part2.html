@@ -1,0 +1,27 @@
+{%  extends "base.html" %}
+
+{% block head %}
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1>Topping Summary Report</h1>
+
+    <table class="grid">
+        <tr>
+            <th>Topping</th>
+            <th>Price</th>
+            <th>Times Ordered</th>
+            <th>TotalValue</th>
+        </tr>
+        {% for t in toppings %}
+        <tr>
+            <td>{{ t[0] }}</td>
+            <td>{{ t[1] }}</td>
+            <td>{{ t[2] }}</td>
+            <td>{{ t[3] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endblock %}
