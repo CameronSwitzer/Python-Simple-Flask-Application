@@ -25,7 +25,7 @@ def part_2():
             "group by pT.toppingId order by total desc")
         return render_template("part2.html", toppings=toppings)
 
-
+# route fro part 3
 @app.route('/part3')
 def part_3():
     data_table = []
